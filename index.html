@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Práctico 1 de maquetado web con CSS Flexbox.">
+  <title>Práctico 1 | Nova Creative</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- NAVBAR: Flexbox alinea el logo, los enlaces y el botón en una fila. -->
+  <header class="topbar">
+    <div class="wrap nav">
+      <a class="logo" href="#inicio"><span class="logo-icon">N</span> NOVA<span class="logo-light">CREATIVE</span></a>
+      <nav aria-label="Menú principal">
+        <a href="#inicio">Inicio</a><a href="#nosotros">Nosotros</a><a href="#proyectos">Proyectos</a>
+      </nav>
+      <a class="nav-cta" href="#contacto">Hablemos <span>↗</span></a>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO: Flexbox crea dos columnas y centra verticalmente el contenido. -->
+    <section class="hero" id="inicio">
+      <div class="wrap hero-layout">
+        <div class="hero-content">
+          <div class="pill"><span></span> ESTUDIO DIGITAL INDEPENDIENTE</div>
+          <h1>Diseñamos el<br>futuro <em>hoy.</em></h1>
+          <p>Transformamos ideas en experiencias digitales. Diseño, creatividad y tecnología trabajando en equipo.</p>
+          <div class="hero-buttons">
+            <a class="btn btn-bright" href="#proyectos">Explorar proyectos <b>↗</b></a>
+            <a class="text-link" href="#nosotros">Descubrí Nova <span>→</span></a>
+          </div>
+          <div class="hero-note"><strong>01</strong><span>ESTRATEGIA · DISEÑO · DESARROLLO</span></div>
+        </div>
+        <div class="visual" aria-label="Composición gráfica abstracta">
+          <div class="orb orb-one"></div><div class="orb orb-two"></div>
+          <div class="visual-panel">
+            <div class="panel-head"><span>nova.studio</span><span>● ● ●</span></div>
+            <div class="panel-big">MAKE<br><i>IT</i><br>MATTER.</div>
+            <div class="panel-bottom"><span>CREATIVE DIGITAL<br>EXPERIENCES</span><b>✳</b></div>
+          </div>
+          <div class="float-label">IDEAS<br>EN MOVIMIENTO</div>
+          <div class="visual-index">N° 001 / 2026</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NOSOTROS: las tarjetas usan flex para repartir el espacio disponible. -->
+    <section class="about section" id="nosotros">
+      <div class="wrap">
+        <div class="section-top"><span>01 — LO QUE HACEMOS</span><span>UN EQUIPO, MUCHAS IDEAS</span></div>
+        <div class="about-row">
+          <h2>La creatividad<br>también es <em>estrategia.</em></h2>
+          <p>Creemos en el poder de las buenas ideas. Combinamos pensamiento creativo y herramientas digitales para construir soluciones claras, útiles y memorables.</p>
+        </div>
+        <div class="features">
+          <article class="feature"><span class="feature-number">01</span><div class="feature-symbol">✳</div><h3>Identidad visual</h3><p>Diseños que comunican la personalidad de cada proyecto.</p></article>
+          <article class="feature"><span class="feature-number">02</span><div class="feature-symbol">▧</div><h3>Experiencias web</h3><p>Páginas atractivas, ordenadas y fáciles de utilizar.</p></article>
+          <article class="feature"><span class="feature-number">03</span><div class="feature-symbol">⌁</div><h3>Ideas digitales</h3><p>Soluciones creativas para conectar con las personas.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROYECTOS: Flexbox con wrap permite que las tarjetas se acomoden en varias filas. -->
+    <section class="projects section" id="proyectos">
+      <div class="wrap">
+        <div class="section-top"><span>02 — SELECCIÓN VISUAL</span><span>PROYECTOS DESTACADOS</span></div>
+        <div class="projects-heading"><h2>Un poco de<br><em>inspiración.</em></h2><p>Una galería de referencias visuales organizada con Flexbox.</p></div>
+        <div class="project-grid">
+          <article class="project project-large">
+            <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1200&q=85" alt="Oficina creativa luminosa">
+            <div class="project-info"><span>01 / ESPACIOS</span><h3>Un lugar para crear</h3></div>
+          </article>
+          <article class="project">
+            <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=900&q=85" alt="Diseño digital en una computadora">
+            <div class="project-info"><span>02 / DIGITAL</span><h3>Diseño que conecta</h3></div>
+          </article>
+          <article class="project">
+            <img src="https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?auto=format&fit=crop&w=900&q=85" alt="Objetos de diseño sobre una mesa">
+            <div class="project-info"><span>03 / DETALLES</span><h3>Inspiración cotidiana</h3></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO: Flexbox alinea el texto y el enlace en los extremos del contenedor. -->
+    <section class="contact" id="contacto">
+      <div class="wrap contact-row">
+        <div><span class="contact-kicker">¿TENÉS UNA IDEA?</span><h2>Hagámosla realidad.</h2></div>
+        <a href="mailto:hola@novacreative.com" class="contact-link">Contactar al estudio <span>↗</span></a>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER: Flexbox separa marca, descripción y datos finales. -->
+  <footer class="footer">
+    <div class="wrap footer-row">
+      <a class="logo footer-logo" href="#inicio"><span class="logo-icon">N</span> NOVA<span class="logo-light">CREATIVE</span></a>
+      <p>Práctico 1 · Maquetando con Flexbox</p>
+      <span>© 2026 · Todos los derechos reservados</span>
+    </div>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
